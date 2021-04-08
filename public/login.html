@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>노트앱</title>
+        <link rel="icon" href="./assets/note.png">
+        <link rel="stylesheet" href="./login.css">
+    </head>
+    <body>
+        <header>
+            <div class="login__header-content">
+                <h1 class="login__header-title">노트앱</h1>
+                <button class="login__header-button">로그아웃</button>
+            </div>
+        </header>
+        <main>
+            <section class="login__login-section">
+                <form method="POST" action="/login">
+                    <div class="login__login-wrapper">
+                        <div class="login__login-text">로그인</div>
+                        <div class="login__login-input">
+                            <img class="login__login-icon" src="./assets/user.png" alt="유저 아이콘"/>
+                            <input class="login__login-mail-input" placeholder="이메일" id="email" name="email"/>
+                        </div>
+                        <div class="login__login-input">
+                            <img class="login__login-icon" src="./assets/lock.png" alt="비밀번호 아이콘"/>
+                            <input class="login__login-pwd-input" placeholder="비밀번호" id="password", name="password"/>
+                        </div>
+                        <button class="login__login-button" onclick="login()">
+                            <div class="login__login-button-text">로그인</div>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="./login.js"></script>
+    </body>
+</html>
