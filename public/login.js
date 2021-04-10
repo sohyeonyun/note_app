@@ -14,3 +14,7 @@ function login() {
     const form = document.getElementById('login');
     form.submit();
 }
+
+function register() {
+    window.location.replace('./register');
+}

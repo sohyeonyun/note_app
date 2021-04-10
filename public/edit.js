@@ -75,3 +75,7 @@ function logout() {
     const form = document.getElementById('logout');
     form.submit();
 }
+
+function goback() {
+    window.location.replace('./');
+}

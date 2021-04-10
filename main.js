@@ -163,7 +163,7 @@ app.get('/login', (req, res) => {
 });
 
 // 로그인 요청
-app.get('/login', async (req, res) => {
+app.post('/login', async (req, res) => {
     if (req.session.account) {
         // 이미 로그인된 상태
         res.redirect('/');
